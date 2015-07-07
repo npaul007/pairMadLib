@@ -10,13 +10,36 @@
 
 <template name="hello">
   <div class="container">
-  	<div class="row">
-  		<div class="col-xs-12">
-  			<p>Create Your Mad Lib!</p>
-  		</div>
+    <div class="row">
+        <div class="col-xs-12 center">
+          <p>Create Your Mad Lib!</p>
+        </div>
+      </div>
 
-  	</div>
-
+      <div class="row">
+        <div class="col-xs-12">
+          <div  class="form-horizontal center" role="form">
+              <div class="form-group">
+                <label for="">exclamation</label>
+                <input type="text" id="exclamation" class="form-control">
+             </div>
+              <div class="form-group">
+                <label for="">adverb</label>
+                <input type="text" name="" id="adverb" class="form-control">
+             </div>
+              <div class="form-group">
+                <label for="">noun</label>
+                <input type="text" id="noun" class="form-control">
+             </div>
+              <div class="form-group">
+                <label for="">verb</label>
+                <input type="text" id="verb" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="submit" class = "btn form-control" >
+              </div>
+            </div>
+          </div>
+        </div>
   </div>
-
 </template>
