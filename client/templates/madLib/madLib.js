@@ -1,9 +1,21 @@
 if (Meteor.isClient) {
-  Template.hello.rendered = function() {
-    $('#btn-submit').click(function() {
-        console.log("Hello World");
-    });
-  }
+  Meteor.startup(function(){
+
+  	 $('#btn-submit').click(function() {
+        var exclamation = $('#exclamation').val();
+
+        var adverb = $('#adverb').val();
+        var noun = $('#noun').val();
+        var verb = $('#verb').val();
+
+        var madLib = "I went to get " + noun + 
+        " while " + verb + ", I saw a(n) " + adverb + " " + noun + " and got " + adverb;
+        console.log(madLib); 
+
+     });
+
+  });
+   
 }
 
 if (Meteor.isServer) {
