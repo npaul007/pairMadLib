@@ -8,9 +8,12 @@ if (Meteor.isClient) {
         var noun = $('#noun').val();
         var verb = $('#verb').val();
 
-        var madLib = "I went to get " + noun + 
-        " while " + verb + ", I saw a(n) " + adverb + " " + noun + " and got " + adverb;
-        console.log(madLib); 
+        var madLib = "'" + exclamation + 
+        "!' he said, as he " + adverb + " jumped onto his " + noun + " and " + verb + " into the sunset.";
+        
+        $('#mad_lib').hide();
+
+        $('#mad_lib').text(madLib).fadeIn("slow").css("color", "#0000ff");
 
      });
 
